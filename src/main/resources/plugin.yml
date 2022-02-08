@@ -1,0 +1,27 @@
+name: Task1B
+version: '${project.version}'
+main: net.azisaba.dojo.task1b.Task1B
+api-version: 1.18
+authors: [ 5hak3 ]
+description: dojo task 1-b
+
+permissions:
+  task1b.op:
+    default: op
+
+commands:
+  heal:
+    permission: task1b.op
+    permission-message: このコマンドは管理者専用です．
+    description: 体力を全回復します．
+    usage: /<command>
+  broadcast:
+    permission: task1b.op
+    permission-message: このコマンドは管理者専用です．
+    description: メッセージをサーバ全体に流します．
+    usage: /<command> [message]
+  loc:
+    permission: task1b.op
+    permission-message: このコマンドは管理者専用です．
+    description: playerの現在のワールドと座標と向きをチャット欄に表示します．
+    usage: /<command> [player]
