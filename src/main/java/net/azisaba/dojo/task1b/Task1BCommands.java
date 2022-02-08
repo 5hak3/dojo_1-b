@@ -74,7 +74,7 @@ public class Task1BCommands implements CommandExecutor {
         ret += String.format(
                 "Locations:\n    x: %.1f\n    y: %.1f\n    z: %.1f\n",
                 pLoc.getX(), pLoc.getY(), pLoc.getZ());
-        ret += "Direction: \n    Yaw: ";
+        ret += "Directions: \n    Yaw: ";
 
         double yaw = pLoc.getYaw() + 180.0;
         if (yaw < 45.0) ret += "North";
@@ -83,7 +83,7 @@ public class Task1BCommands implements CommandExecutor {
         else if (yaw < 315.0) ret += "West";
         else ret += "North";
         ret += String.format(
-                " (%.2f)\n    Pitch: %.2f",
+                " (%.1f)\n    Pitch: %.1f",
                 yaw, pLoc.getPitch());
 
         return ret;
